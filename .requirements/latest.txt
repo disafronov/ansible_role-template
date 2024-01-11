@@ -1,5 +1,4 @@
-# Ansible-latest test environment
+# Requirements for ansible latest
 ansible
 ansible-lint
 yamllint
-pytest

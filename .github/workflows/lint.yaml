@@ -20,7 +20,7 @@ jobs:
     strategy:
       max-parallel: 2
       matrix:
-        ansible: ["2.12", "latest"]
+        ansible: ["2.16", "latest"]
 
     steps:
       - name: Check out the codebase
@@ -37,7 +37,7 @@ jobs:
         run: pip install --upgrade pip wheel
 
       - name: Install test dependencies
-        run: pip3 install -r .requirements/${{ matrix.ansible }}.txt
+        run: pip install -r .requirements/${{ matrix.ansible }}.txt
 
       - name: Run yamllint
         run: yamllint .
