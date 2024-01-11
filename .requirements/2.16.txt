@@ -1,0 +1,4 @@
+# Requirements for ansible stable
+ansible>=2.16<2.17
+ansible-lint
+yamllint
