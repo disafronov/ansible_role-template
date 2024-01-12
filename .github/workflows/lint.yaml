@@ -11,6 +11,10 @@ name: Lint
     - cron: "00 12 10 * *"
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
 
   test:
@@ -38,9 +42,6 @@ jobs:
 
       - name: Install test dependencies
         run: pip install -r .requirements/${{ matrix.ansible }}.txt
-
-      - name: Run yamllint
-        run: yamllint .
 
       - name: Run ansible-lint
         run: ansible-lint
