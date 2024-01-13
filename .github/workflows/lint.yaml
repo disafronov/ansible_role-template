@@ -5,7 +5,7 @@ name: Lint
 "on":
   pull_request:
     branches:
-      - master
+      - main
   schedule:
     # Run on the 10th of each month at noon.
     - cron: "00 12 10 * *"
