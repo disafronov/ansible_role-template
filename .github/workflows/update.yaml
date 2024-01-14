@@ -1,0 +1,55 @@
+---
+
+name: Update
+
+"on":
+  schedule:
+    # Run every day at 13:00.
+    - cron: "00 13 * * *"
+  workflow_dispatch:
+
+jobs:
+
+  test:
+    name: Update
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the codebase
+        if: ${{ github.repository != 'dmitriysafronov/ansible_role-template' }}
+        uses: actions/checkout@v3
+
+      - name: Check out template repo
+        if: ${{ github.repository != 'dmitriysafronov/ansible_role-template' }}
+        uses: actions/checkout@v3
+        with:
+          repository: dmitriysafronov/ansible_role-template
+          clean: false
+          path: .update
+
+      - name: Update files & clean temp files
+        if: ${{ github.repository != 'dmitriysafronov/ansible_role-template' }}
+        run: |
+          rsync -avP .update/.requirements/ .requirements/ || true
+          rsync -avP --include=lint.yaml --include=update.yaml --exclude=** --delete-after .update/.github/workflows/ .github/workflows/ || true
+          rm -rf .update/
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v3
+        if: ${{ github.repository != 'dmitriysafronov/ansible_role-template' }}
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "update"
+          delete-branch: true
+          title: "chore(deps): upgrade from template"
+          signoff: true
+          committer: "nobody <nobody@users.noreply.github.com>"
+          author: "nobody <nobody@users.noreply.github.com>"
+          commit-message: "chore(deps): upgrade from template"
+          body: |
+            Upgrade from template
+          draft: false
+          add-paths: |
+            .requirements/**
+            .github/workflows/lint.yaml
+            .github/workflows/update.yaml
