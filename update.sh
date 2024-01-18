@@ -6,6 +6,8 @@ git \
   .update
 
 rsync -av \
+  --include=.github/ \
+  --include=.github/workflows/ \
   --include=.github/workflows/lint.yaml \
   --include=.requirements/* \
   --include=update.sh \
