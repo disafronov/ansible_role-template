@@ -7,8 +7,10 @@ git \
 
 rsync -av \
   --include=.github/ \
+  --include=.github/dependabot.yml \
   --include=.github/workflows/ \
   --include=.github/workflows/lint.yaml \
+  --include=.github/workflows/rebase-on-push-to-main-branch.yaml \
   --include=.requirements/* \
   --include=update.sh \
   --exclude=* \
