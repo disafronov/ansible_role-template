@@ -5,5 +5,6 @@
 .github/workflows/push-create_tag.yaml
 .github/workflows/push-rebase.yaml
 .github/workflows/tag-release.yaml
+.requirements/
 .requirements/*
 update.sh
