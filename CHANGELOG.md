@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2024-11-12
+
+### 🐛 Bug Fixes
+
+- Update.list
+
 ## [1.2.0] - 2024-11-12
 
 ### 🚀 Features
