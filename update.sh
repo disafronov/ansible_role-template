@@ -10,7 +10,9 @@ rsync -av \
   --include=.github/dependabot.yml \
   --include=.github/workflows/ \
   --include=.github/workflows/lint.yaml \
-  --include=.github/workflows/rebase-on-push-to-main-branch.yaml \
+  --include=.github/workflows/push-create_tag.yaml \
+  --include=.github/workflows/push-rebase.yaml \
+  --include=.github/workflows/tag-release.yaml \
   --include=.requirements/* \
   --include=update.sh \
   --exclude=* \
