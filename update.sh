@@ -5,19 +5,13 @@ git \
   https://github.com/dmitriysafronov/ansible_role-template.git \
   .update
 
-rsync -av \
-  --include=.github/ \
-  --include=.github/dependabot.yml \
-  --include=.github/workflows/ \
-  --include=.github/workflows/lint.yaml \
-  --include=.github/workflows/push-create_tag.yaml \
-  --include=.github/workflows/push-rebase.yaml \
-  --include=.github/workflows/tag-release.yaml \
-  --include=.requirements/* \
-  --include=update.sh \
-  --exclude=* \
-  --delete-after \
-  .update/ \
-  ./
+if [[ -s .update/update.list ]]; then
+  rsync -av \
+    --include-from=.update/update.list \
+    --exclude=* \
+    --delete-after \
+    .update/ \
+    ./
+fi
 
 rm -rf .update/
