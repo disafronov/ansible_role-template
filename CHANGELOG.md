@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2024-11-12
+
+### 🚀 Features
+
+- Update.sh with update.list
+
 ## [1.1.0] - 2024-11-12
 
 ### 🚀 Features
