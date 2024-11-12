@@ -4,6 +4,7 @@
 .github/workflows/lint.yaml
 .github/workflows/push-create_tag.yaml
 .github/workflows/push-rebase.yaml
+.github/workflows/schedule_update-from-template.yaml
 .github/workflows/tag-release.yaml
 .requirements/
 .requirements/*
