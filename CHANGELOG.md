@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.3] - 2024-11-25
+
+### 🚜 Refactor
+
+- Ansible 10 -> 11
+
 ## [1.2.2] - 2024-11-12
 
 ### 🚜 Refactor
