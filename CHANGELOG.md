@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.4] - 2024-12-18
+
+### 🚜 Refactor
+
+- Ci lint (#29)
+
 ## [1.2.3] - 2024-11-25
 
 ### 🚜 Refactor
