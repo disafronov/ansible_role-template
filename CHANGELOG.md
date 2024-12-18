@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.7] - 2024-12-18
+
+### 🚜 Refactor
+
+- Update.sh
+
 ## [1.2.6] - 2024-12-18
 
 ### 🚜 Refactor
