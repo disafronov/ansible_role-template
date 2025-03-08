@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.12] - 2025-03-08
+
+### 🚜 Refactor
+
+- Remove dependabot file from upgrades
+
 ## [1.2.11] - 2025-02-25
 
 ### 🚜 Refactor
