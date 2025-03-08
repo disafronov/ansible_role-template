@@ -11,6 +11,8 @@ git -C .update -c advice.detachedHead=false checkout ${LATEST_TAG}
 
 if [[ -s .update/update.list ]]; then
   rsync -av \
+    --include=update.list \
+    --include=update.sh \
     --include-from=.update/update.list \
     --exclude=* \
     --delete-after \
