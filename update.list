@@ -7,4 +7,3 @@
 .github/workflows/tag-release.yaml
 .requirements/
 .requirements/*
-update.sh
