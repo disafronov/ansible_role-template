@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.29] - 2025-04-26
+
+### 🐛 Bug Fixes
+
+- Rename
+
 ## [1.2.15] - 2025-03-08
 
 ### 🚜 Refactor
