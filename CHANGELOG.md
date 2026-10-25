@@ -1,3 +1,5 @@
+## [1.4.8](https://github.com/disafronov/ansible_role-template/compare/v1.4.7...v1.4.8) (2026-10-25)
+
 ## [1.4.7](https://github.com/disafronov/ansible_role-template/compare/v1.4.6...v1.4.7) (2026-10-23)
 
 ## [1.4.4](https://github.com/disafronov/ansible_role-template/compare/v1.4.3...v1.4.4) (2026-07-01)
