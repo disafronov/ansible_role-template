@@ -1,3 +1,9 @@
+## [1.4.15](https://github.com/disafronov/ansible_role-template/compare/v1.4.14...v1.4.15) (2026-10-30)
+
+### Bug Fixes
+
+* **dependabot:** use repository root for GitHub Actions updates ([e1a2f08](https://github.com/disafronov/ansible_role-template/commit/e1a2f082d0f7fe678ef5fd80876fe224ee088a0d))
+
 ## [1.4.14](https://github.com/disafronov/ansible_role-template/compare/v1.4.13...v1.4.14) (2026-10-29)
 
 ### Code Refactoring
