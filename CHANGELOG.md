@@ -1,3 +1,9 @@
+## [1.4.17](https://github.com/disafronov/ansible_role-template/compare/v1.4.16...v1.4.17) (2026-11-02)
+
+### Code Refactoring
+
+* sync from template v3.0.1 ([d1ffc1c](https://github.com/disafronov/ansible_role-template/commit/d1ffc1c00c2d117ca4fd472f84db23181f801637))
+
 ## [1.4.16](https://github.com/disafronov/ansible_role-template/compare/v1.4.15...v1.4.16) (2026-11-02)
 
 ### Code Refactoring
