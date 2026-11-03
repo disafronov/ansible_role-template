@@ -1,3 +1,9 @@
+## [1.4.18](https://github.com/disafronov/ansible_role-template/compare/v1.4.17...v1.4.18) (2026-11-03)
+
+### Code Refactoring
+
+* sync from disafronov/semantic-basic-template v3.0.2 ([4747c30](https://github.com/disafronov/ansible_role-template/commit/4747c30414e03a75135dca0570502f1a0b81edbc))
+
 ## [1.4.17](https://github.com/disafronov/ansible_role-template/compare/v1.4.16...v1.4.17) (2026-11-02)
 
 ### Code Refactoring
